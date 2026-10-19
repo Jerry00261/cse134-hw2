@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jerry Barillas Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        nav {
+            border: 1px solid black
+        }
+        main {
+            border: 1px solid black
+        }
+
+        footer {
+            border: 1px solid black
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +26,7 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        <img src="sources/home.svg" alt="Home">
+                        <img src="sources/home.svg" alt="Home"/>
                     </a>
                 </li>
                 <li>
@@ -37,6 +50,7 @@
     </header>
     <main>
        <img src="sources/headshot.jpeg" alt="Headshot of Jerry Barillas">
+
         <section>
             <h2>About me</h2>
             <p>Hello! My name is Jerry Barillas and I am an undergraduate here at the University
@@ -45,7 +59,7 @@
                 my skills in <b>full stack development</b>, either through projects, classes, or internships. In my free time 
                 I like to listen to music, go out to eat with friends, and if time permits it, play video games.
             </p>
-            <a href="Hobbies.html">Hobbies</a>
+            <p><a href="Hobbies.html">Hobbies</a></p>
         </section>
         
         <section>
@@ -61,8 +75,43 @@
 
     <footer>
         <h2>Contact Information</h2>
-        <p><b>Email:</b> <a href="mailto:jerrybr11905@gmail.com">jerrybr11905@gmail.com</a></p>
-        <p><b>Phone:</b> <a href="tel:+16264189457">(626) 418-9457</a></p>
+        <div>
+            <p><b>Email:</b> <a href="mailto:jerrybr11905@gmail.com">jerrybr11905@gmail.com</a></p>
+            <p><b>Phone:</b> <a href="tel:+16264189457">(626) 418-9457</a></p>
+        </div>
+        
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Contact me</legend>
+                <p>
+                    <label for="firstName">First Name: 
+                        <input type="text" name="firstName" id="firstName">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name:
+                        <input type="text" name="lastName" id="lastName">
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email: 
+                        <input type="email" name="email" id="email">
+                    </label>
+                </p>
+
+                <p>
+                    <label for="message">Purpose for contact:
+                        <textarea id="message" name="message"></textarea>
+                    </label>
+                </p>
+            </fieldset>
+
+            <button type="submit">Send</button>
+
+        </form>
     </footer>
 </body>
 </html>
