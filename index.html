@@ -18,6 +18,7 @@
             border: 1px solid black
         }
     </style>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,7 +27,14 @@
             <ul>
                 <li>
                     <a href="index.html">
-                        <img src="sources/home.svg" alt="Home"/>
+                        <svg viewBox="0 0 32 32" width="32" height="32" fill="#1A1A1A" role="img"
+                                aria-labelledby="homeTitle">
+                                <title id="homeTitle">Home</title>
+                                <polygon points="16, 3 2, 15 30, 15" stroke="#1A1A1A" stroke-width="1"/>
+                                <rect x="5" y="14" width="22" height="15"/>
+                                <rect x="12" y="19" width="8" height="10" fill="white" stroke="#1A1A1A" opacity="0.9"/>
+                                <rect x="8" y="17" width="3" height="3" fill="white"/>
+                        </svg>
                     </a>
                 </li>
                 <li>
@@ -46,6 +54,10 @@
     </header>
     <main>
         <h1>Jerry's Portfolio</h1>
+        <hello-world></hello-world>
+        <noscript>
+            <p>JavaScript disabled, hello-world element can't log its message</p>
+        </noscript>
         <career-title>
             <p class="career-title">Software Engineer</p>
         </career-title>
@@ -59,6 +71,12 @@
                 my skills in <b>full stack development</b>, either through projects, classes, or internships. In my free time 
                 I like to listen to music, go out to eat with friends, and if time permits it, play video games.
             </p>
+
+            <p>
+                <label for="degree">Progress towards my college journey</label>
+                <progress id="degree" value="4" max="5">4 of 5 years</progress>
+            </p>
+           
             <p><a href="Hobbies.html">Hobbies</a></p>
         </section>
         
